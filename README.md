@@ -1,19 +1,41 @@
-# springboot-vue-demo
+# 电商秒杀 原型
 
-## Project setup
-```
-npm install
-```
+## 前端
+* 所有人
+  * 商品展示
+* 卖家
+  * 
+* 卖家
+  * 电商首页
+  * 搜索具体宝贝
+  * 宝贝详情页（参见tb）
+  * 查看购物车和将宝贝移出购物车
+  * 查看和修改个人资料
+  * 收藏店铺并接受动态推送
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 后台
+#### 管理员
+* 审核店铺
+* 处理投诉
+#### 卖家
+* 注册商铺、登录、auth
+* 店铺上新、下架宝贝、推送（富文本）
+* 和买家聊天、备注
+* 处理退换货、投诉
 
-### Compiles and minifies for production
-```
-npm run build
-```
+#### 买家功能
+* 注册、登录。auth
+* 查看个人主页、查看购物车
+* 浏览产品、加入购物车、购买、预定、关注店铺
+* 退换货、投诉、屏蔽
+* 和卖家聊天
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### 数据库
+* 买家：ID、用户名、密码、余额
+* 卖家：ID、用户名、密码、余额、店铺名、
+* 连接表
+  * 卖家商品
+  * 买家购物车
+  * 买家关注店铺
+  * 买家已买到商品
+* 商品：ID、名字、卖家、原价、售价、
